@@ -14,6 +14,13 @@ Overview of the proposed ICPN for cervical nuclei nucleus segmentation. ICPN con
 
 Interacting Convolutional Module has two parallel convolution paths. The upper path uses a smaller convolution kernel to capture detailed structural information inside the nucleus, while the lower path uses a relatively large convolution kernel to catch the global context of the overall structure of the nucleus. There is an information exchange in the process. Similar to the GCN, we use the similar approach to reduce parameters (batch normalization, separate kernels). 
 
-![](img/ICPRM.PNG)
+![](img/IPRCM.PNG)
 
 Internal Pyramid Resolution Complementing Module converts the features of the current resolution representations and restores these multiresolution features to the current resolution size. This process captures the potential multiresulution representations of the current resolution features, thereby compensating for the loss of information caused by the pooling layer. The 1*1 convolutional layer is used for dimensionality reduction.
+
+## Herlev testing result
+![](img/result.PNG)
+
+#Usage
+1. Install tensorflow and keras
+   
