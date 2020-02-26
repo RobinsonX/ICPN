@@ -32,7 +32,7 @@ To install keras == 2.2.0, please refer to [](https://keras.io/#installation)
  2. copy all cervical images into "dataset/raw_data/images"
  3. copy all cervical labels into "dataset/raw_date/labels"
  4. setup your absolute paths in "dataset/create_dataset.py"
- 5. (```)
-      cd dataset/
-      python create_dataset.py
-    (```)
+ 5. 
+    `cd dataset/`
+    `python create_dataset.py`
+    
