@@ -64,10 +64,10 @@ class CreateDateset:
         self.copy_file(val_img_paths, self.dataset_dir + '/val/images')
         self.copy_file(val_label_paths, self.dataset_dir + '/val/labels')
 
-# setup your own directories
+# setup your own raw data folders
 # use absolute path
-image_dir = '/home/work/dataset/raw_data/images'
-label_dir = '/home/work/dataset/raw_data/labels'
-dataset_dir = '/home/work/dataset'
+image_dir = '/home/workspace/dataset/raw_data/images'
+label_dir = '/home/workspace/dataset/raw_data/labels'
+dataset_dir = '/home/workspace/dataset'
 data = CreateDateset(image_dir, label_dir, dataset_dir)
 data.create()
