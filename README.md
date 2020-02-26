@@ -24,8 +24,8 @@ Internal Pyramid Resolution Complementing Module converts the features of the cu
 ## Usage
 ### Requirements
 You can setup you envirnoment by requirements.txt.
-To install tensorflow == 1.12.0, please refer to [](https://www.tensorflow.org/install)
-To install keras == 2.2.0, please refer to [](https://keras.io/#installation)
+To install tensorflow == 1.12.0, please refer to [https://www.tensorflow.org/install](https://www.tensorflow.org/install)
+To install keras == 2.2.0, please refer to [https://keras.io/#installation](https://keras.io/#installation)
 
 ### Dataset splitting
  1. Download smear2005 dataset.
@@ -36,4 +36,19 @@ To install keras == 2.2.0, please refer to [](https://keras.io/#installation)
     ```
      cd dataset/
      python create_dataset.py
-    ``` 
+    ```
+
+### Training network
+ 1. setup you own dataset folders in "core/data/get_batch_data.py".
+ 2. do following command:
+    `python train.py`
+
+### Testing network
+ do following command:
+    `python test.py`
+
+### Predicting 
+ do following command:
+    `python predict.py`
+
+
