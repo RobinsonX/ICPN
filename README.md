@@ -1,6 +1,7 @@
 # INTERACTING CONVOLUTION WITH PYRAMID STRUCTURE NETWORK FOR AUTOMATED SEGMENTATION OF CERVICAL NUCLEI IN PAP SMEAR IMAGES
 By Xiaoqing Yang, Junmin Wu, Yan Yin.
 
+Accepted by ISBI2020
 ## Introduction
 We propose an Interacting Convolution with Pyramid Structure Network (ICPN), which consists of a sufficient aggregation path that focus on more nucleus contexts and a selecting path that enable nucleus localization. The two paths are built on Interacting Convolutional Modules (ICM) and Internal Pyramid Resolution Complementing Modules (IPRCM) respectively. We evaluate our network on public [Herlev dataset(Part II-smear2005.zip)](http://mde-lab.aegean.gr/index.php/downloads).
 
@@ -25,6 +26,7 @@ Internal Pyramid Resolution Complementing Module converts the features of the cu
 ### Requirements
 You can setup you envirnoment by requirements.txt.
 To install tensorflow == 1.12.0, please refer to [https://www.tensorflow.org/install](https://www.tensorflow.org/install)
+
 To install keras == 2.2.0, please refer to [https://keras.io/#installation](https://keras.io/#installation)
 
 ### Dataset splitting
@@ -41,14 +43,22 @@ To install keras == 2.2.0, please refer to [https://keras.io/#installation](http
 ### Training network
  1. setup you own dataset folders in "core/data/get_batch_data.py".
  2. do following command:
-    `python train.py`
+    ```
+     python train.py
+    ```
 
 ### Testing network
  do following command:
-    `python test.py`
+    ```
+     python test.py
+    ```
 
 ### Predicting 
  do following command:
-    `python predict.py`
+    ```
+     python predict.py
+    ```
 
-
+## Further study
+ 1. Further ablation study
+ 2. More comparative results
