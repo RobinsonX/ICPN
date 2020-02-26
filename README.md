@@ -49,12 +49,14 @@ To install keras == 2.2.0, please refer to [https://keras.io/#installation](http
 
 ### Testing network
  do following command:
+
     ```
      python test.py
     ```
 
 ### Predicting 
  do following command:
+
     ```
      python predict.py
     ```
