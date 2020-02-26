@@ -21,6 +21,18 @@ Internal Pyramid Resolution Complementing Module converts the features of the cu
 ## Herlev testing result
 ![](img/result.PNG)
 
-#Usage
-1. Install tensorflow and keras
-   
+## Usage
+### Requirements
+You can setup you envirnoment by requirements.txt.
+To install tensorflow == 1.12.0, please refer to [](https://www.tensorflow.org/install)
+To install keras == 2.2.0, please refer to [](https://keras.io/#installation)
+
+### Dataset splitting
+ 1. Download smear2005 dataset.
+ 2. copy all cervical images into "dataset/raw_data/images"
+ 3. copy all cervical labels into "dataset/raw_date/labels"
+ 4. setup your absolute paths in "dataset/create_dataset.py"
+ 5. (```)
+      cd dataset/
+      python create_dataset.py
+    (```)
