@@ -56,7 +56,7 @@ valDate = valGenerator(4, 2, palette=palette2, target_size=[256, 256], save_to_d
 model = network(input_size=(256,256,3))
 
 # Optimizer
-model.compile(optimizer=Adam(lr=1e-3, decay=0.0005), loss=[dice_loss], metrics=[dice_coeff])
+model.compile(optimizer=SGD(lr=1e-3, decay=0.0005), loss=[dice_loss], metrics=[dice_coeff])
 
 # plot model
 plot_model(model, to_file='events/graphviz/ICPN.png')
